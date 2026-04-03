@@ -1,0 +1,285 @@
+{
+    "serverinfo": {
+        "name": "PbtServers: Chat System",
+        "description": "El Sistema de Chat de PbtServers",
+        "port": 8080,
+        "setup": 1,
+        "maxUploadStorage": 512,
+        "rateLimit": 512,
+        "dropInterval": 5,
+        "useCloudflareImageCDN": "",
+        "cfAccountId": "",
+        "cfAccountToken": "",
+        "cfHash": "",
+        "moderation": {
+            "ip": {
+                "urlWhitelist": [
+                    "/^/discover(/.*)?$/",
+                    "/^/uploads(/.*)?$/",
+                    "/^/emojis(/.*)?$/"
+                ],
+                "companyDomainWhitelist": [],
+                "blacklist": [],
+                "whitelist": [],
+                "blockedCountryCodes": [],
+                "blockDataCenter": true,
+                "blockSatelite": true,
+                "blockCrawler": true,
+                "blockBogon": true,
+                "blockProxy": true,
+                "blockVPN": true,
+                "blockTor": true,
+                "blockAbuser": true
+            },
+            "ratelimit": {
+                "actions": {
+                    "user_slowmode": 0,
+                    "user_slowmode_duration": "2 minutes",
+                    "ratelimit": 0
+                },
+                "record_history": "14 days"
+            },
+            "bans": {
+                "allowXSSTesting": false,
+                "displayName": "Banned",
+                "displayMessageNotice": "<span class=\"content-hidden\">[ Content hidden ]</span>",
+                "ipBanDuration": "10 minutes",
+                "memberListHideBanned": true
+            }
+        },
+        "instance": {
+            "contact": {
+                "email": "",
+                "website": "",
+                "reddit": "",
+                "discord": "",
+                "github": "",
+                "signal": "",
+                "owner": {
+                    "name": ""
+                }
+            }
+        },
+        "defaultTheme": "default.css",
+        "livekit": {
+            "enabled": true,
+            "key": "dev",
+            "secret": "testing",
+            "url": "chats.pbtservers.com:7880"
+        },
+        "discovery": {
+            "enabled": true,
+            "networkSyncing": true,
+            "defaultStatus": "verified"
+        },
+        "system": {
+            "members": {
+                "allowCountryCode": true,
+                "ignoreTimeout": "30 days"
+            },
+            "welcome": {
+                "enabled": true,
+                "message": "<h3>Bienvenid@ al servidor!</h3>"
+            }
+        },
+        "home": {
+            "banner_url": "",
+            "title": "Default Server Title",
+            "subtitle": "Default Server Sub-Title",
+            "about": "This is the <i>default server</i> about me"
+        },
+        "reports": {
+            "enabled": true
+        },
+        "app": {
+            "url": "http://chat.pbtservers.com"
+        },
+        "slots": {
+            "limit": 100,
+            "reserved": 4,
+            "ipWhitelist": [
+                "::1",
+                "::ffff:127.0.0.1"
+            ]
+        },
+        "pow": {
+            "difficulty": 4
+        },
+        "registration": {
+            "enabled": true,
+            "accessCodes": {}
+        },
+        "login": {
+            "maxLoginAttempts": 5
+        },
+        "sql": {
+            "enabled": true,
+            "host": "localhost",
+            "port": 3306,
+            "username": "pbtchat",
+            "password": "NOHAYPASSWORDJAJAS",
+            "database": "dcts",
+            "connectionLimit": 10
+        },
+        "ssl": {
+            "enabled": false,
+            "key": "",
+            "cert": "",
+            "chain": ""
+        },
+        "defaultChannel": "0",
+        "countryCode": "es",
+        "messageLoadLimit": 50,
+        "uploadFileTypes": [
+            "image/png",
+            "image/jpeg",
+            "image/gif",
+            "image/webp",
+            "audio/mpeg",
+            "video/mp4",
+            "audio/vnd.wave"
+        ],
+        "dms": {
+            "maxParticipants": 10
+        }
+    },
+    "ipblacklist": [],
+    "banlist": {},
+    "mutelist": {},
+    "serverroles": {
+        "0": {
+            "info": {
+                "id": "0",
+                "name": "Member",
+                "icon": null,
+                "color": "#FFFFFF",
+                "deletable": 0,
+                "sortId": 1,
+                "displaySeperate": 1,
+                "hasRole": 1
+            },
+            "permissions": {
+                "readMessages": 1,
+                "sendMessages": 1,
+                "uploadFiles": 1,
+                "redeemKey": 1,
+                "maxUpload": "10",
+                "manageChannels": 0,
+                "viewChannelHistory": 1,
+                "createReports": 1
+            },
+            "members": [
+                "136802326143",
+                "143998374489",
+                "125347304862",
+                "180521706667",
+                "192736953083",
+                "117095923098",
+                "181653505295",
+                "126569294033"
+            ],
+            "token": []
+        },
+        "1": {
+            "info": {
+                "id": "1",
+                "name": "Offline",
+                "icon": null,
+                "color": "#7C808A",
+                "deletable": 0,
+                "sortId": 0,
+                "displaySeperate": 1,
+                "hasRole": 0
+            },
+            "permissions": {},
+            "members": [],
+            "token": []
+        },
+        "1111": {
+            "info": {
+                "id": 1111,
+                "name": "Administrator",
+                "icon": null,
+                "color": "#ff0000",
+                "deletable": 0,
+                "sortId": 3,
+                "displaySeperate": 1,
+                "hasRole": 0
+            },
+            "permissions": {
+                "readMessages": 1,
+                "administrator": 1,
+                "manageChannels": 0
+            },
+            "members": [
+                "136802326143"
+            ],
+            "token": []
+        }
+    },
+    "groups": {
+        "0": {
+            "info": {
+                "id": "0",
+                "name": "PbtServers: Servidor de Chat",
+                "icon": "",
+                "banner": "",
+                "isDeletable": 1,
+                "sortId": 2,
+                "access": []
+            },
+            "channels": {
+                "categories": {
+                    "0": {
+                        "info": {
+                            "id": "0",
+                            "name": "General",
+                            "sortId": 2
+                        },
+                        "channel": {
+                            "0": {
+                                "id": "0",
+                                "name": "chat",
+                                "type": "text",
+                                "description": "",
+                                "sortId": 0,
+                                "permissions": {
+                                    "0": {
+                                        "readMessages": 1,
+                                        "sendMessages": 1,
+                                        "viewChannel": 1,
+                                        "viewChannelHistory": 1
+                                    }
+                                },
+                                "msgCount": 12
+                            },
+                            "1561": {
+                                "id": "1561",
+                                "name": "General Voz",
+                                "type": "voice",
+                                "description": "Default Channel Description",
+                                "sortId": 0,
+                                "permissions": {
+                                    "0": {
+                                        "viewChannelHistory": 0,
+                                        "readMessages": 0,
+                                        "sendMessages": 0,
+                                        "viewChannel": -1
+                                    }
+                                },
+                                "msgCount": 0
+                            }
+                        }
+                    }
+                }
+            },
+            "permissions": {
+                "0": {
+                    "viewGroup": 1,
+                    "sendMessages": 1,
+                    "readMessages": 1
+                }
+            }
+        }
+    }
+}
