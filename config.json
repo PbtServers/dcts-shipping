@@ -65,7 +65,7 @@
             "enabled": true,
             "key": "dev",
             "secret": "testing",
-            "url": "chats.pbtservers.com:7880"
+            "url": "chats.pbtservers.com"
         },
         "discovery": {
             "enabled": true,
